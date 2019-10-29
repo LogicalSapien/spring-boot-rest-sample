@@ -27,6 +27,11 @@ test {
 	useJUnitPlatform()
 }
 
+checkstyle {
+	toolVersion '8.26'
+	configFile file("config/checkstyle/checkstyle.xml")
+}
+
 sonarqube {
 	properties {
 		property "sonar.projectKey", "LogicalSapien_spring-boot-rest-sample"
