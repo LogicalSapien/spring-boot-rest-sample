@@ -29,6 +29,6 @@ test {
 
 sonarqube {
 	properties {
-		sonar.projectKey: LogicalSapien_spring-boot-rest-sample
+		property "sonar.projectKey", "LogicalSapien_spring-boot-rest-sample"
 	}
 }
