@@ -7,5 +7,5 @@ addons:
 script:
 #- "./gradlew checkstyleMain checkstyleTest"
 - "./gradlew jacocoTestReport"
-- "ls -lrt "
+- "ls build/reports/jacoco/"
 #- "./gradlew sonarqube"
