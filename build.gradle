@@ -56,5 +56,6 @@ sonarqube {
 	properties {
 		property "sonar.projectKey", "LogicalSapien_spring-boot-rest-sample"
 		property "sonar.coverage.jacoco.xmlReportPaths", "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
+		property "sonar.coverage.exclusions", "src/main/java/com/logicalsapien/springbootrestsample/SpringBootRestSampleApplication.java"
 	}
 }
