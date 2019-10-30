@@ -35,9 +35,13 @@ test {
 jacocoTestReport {
 	reports {
 		xml.enabled true
-		xml.destination file("${buildDir}/reports/jacoco/test/jacocoTestReport.xml")
 		html.enabled true
 		csv.enabled false
+	}
+	afterEvaluate {
+		classDirectories.setFrom(files(classDirectories.files.collect {
+			fileTree(dir: it, excludes: ['**/com/logicalsapien/springbootrestsample/SpringBootRestSampleApplication**'])
+		}))
 	}
 }
 
