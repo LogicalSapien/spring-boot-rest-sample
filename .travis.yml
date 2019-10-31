@@ -5,6 +5,8 @@ addons:
     organization: logicalsapien
     token:
       secure: u511avGHbWb995YWUlsxFv+8vFVDMOFk7l/jONQiKOMh9XDNzKFQe2CL3GBbkBbiPwrx/aM296CqojdcyOHNloUaIDwuW5Fhu9//5RmCx23bcTosMWZ1MEOKBqlO+ws7qSJT6mlY3EszQK6mtPWXj4as+tSz2688aSZyEOeQDfnKI6jp+quVWTyZQpPyZCbugdLMVhT7JwzIbsONaqU2CmxLvqXjMqcsovZxN7aaOn1eCgtUxIAQn58/+8MlntNMtKhezmOkhmfsIeOK7qv6qkSYDvi/le/X2Oq8ZvU2KYo7g47xKjMloTCimVpwIgA3oTxxITVQg2fWasOYLbtOjMWODYDUlBR3F5+9PO5lNkEWF7fILbgo+nIRZC4RY7NVgIZIFD1eCKR1Boddi8Ep7xCn24EPReV2PpCptLBXFXM2Nn9isO0FX9YMM41rGlGhdTaDk6/CIcjW0NFan+dc7Hqmz3SbnAYDaqpNOxI+yAPSik3W021y0CTh4t2qZAqe0Iz79b0ki5a+DzPNvLV5TAlxqOIFs8z/TAm/peNFS59ABXfEcuxbIJElTURSN3SU+watz6jkUUZ3ZzJQa6A5TgD5V4X5A+suVkT0i32IlRbyzoZI9LwUq0YjWH1P494HuIqFKuLq7t8K4tn+a6n91EYPAyZw0VviOtJ8zsiRsGk=
+before_install:
+- chmod +x gradlew
 script:
 - "./gradlew checkstyleMain checkstyleTest"
 - "./gradlew clean build jacocoTestReport"

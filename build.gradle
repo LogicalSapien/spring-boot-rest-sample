@@ -6,7 +6,7 @@ plugins {
 	id "jacoco"
 }
 
-// For applying checkstyle confoguration
+// For applying checkstyle configuration
 apply plugin: 'checkstyle'
 
 group = 'com.logicalsapien'
