@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/planet")
-public class PlanetController {
+class PlanetController {
 
   /**
    * get Api to return list of all planets.
    * @return List of Planets
    */
   @GetMapping()
-  public ResponseEntity<List<String>> listAllPlanets() {
+  ResponseEntity<List<String>> listAllPlanets() {
     List<String> planetList
                 = List.of("Mercury", "Venus", "Earth", "Mars",
                             "Jupiter", "Saturn", "Uranus", "Neptune");
